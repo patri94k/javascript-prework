@@ -21,7 +21,7 @@ var randomNumber;
 randomNumber = Math.floor(Math.random() * 9 + 10);
 printMessage('Wylosowana liczba to: ' + randomNumber);
 
-//losowanuie
+//losowanie
 var computerMove, randomNumber;
 randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
@@ -206,6 +206,7 @@ function buttonClicked(argButtonName){
     // tu znajdzie się cała dotychczasowa zawartość pliku js/script.js
     // czyli efekt ćwiczenia z poprzedniego submodułu
     // z drobną zmianą dot. zmiennej playerMove (wspomnieliśmy o tym powyżej)
+}
 	var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
   /**
@@ -257,3 +258,39 @@ buttonTest.addEventListener('click', function(){
 
 // tu będą kolejne powiązania guzików z funkcją buttonClicked
 // (każda z innym argumentem)
+
+
+
+// FINAL VERSION
+
+//BUTTON ROCK
+
+var argButtonName, buttonRock;
+
+function buttonClicked(argButtonName) {
+}
+buttonRock = document.getElementById('button-rock');
+buttonRock.addEventListener('click', function(){ buttonClicked('Kamień'); }
+
+//BUTTON PAPER
+
+var argButtonName, buttonPaper;
+
+function buttonClicked(argButtonName) {
+  clearMessages();
+  console.log(argButtonName + ' został kliknięty');
+}
+buttonPaper = document.getElementById('button-paper');
+buttonPaper.addEventListener('click', function(){ buttonClicked('Papier'); });
+
+//BUTTON SCISSORS
+
+var argButtonName, buttonScissors;
+
+function buttonClicked(argButtonName) {
+  clearMessages();
+  console.log(argButtonName + ' został kliknięty');
+}
+buttonScissors = document.getElementById('button-scissors');
+buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce'); });
+
